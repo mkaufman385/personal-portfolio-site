@@ -1,15 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
-import Reorder from "@material-ui/icons/Reorder";
-// import Reorder from '@m'
+import ReorderIcon from "@material-ui/icons/Reorder";
 
 function Navbar() {
+  const [expandNavbar, setExpandNavbar] = useState(false);
+
+  const location = useLocation();
+
+  //USEEFFECT CLOSES HAMBURGER BUTTON AFTER MAKING A SELECTION
+  useEffect(() => {
+    setExpandNavbar(false);
+  }, [location]);
   return (
-    <div className="navbar">
+    <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
-        <button>
-          <Reorder />
+        <button
+          onClick={() => {
+            setExpandNavbar((prev) => !prev);
+          }}
+        >
+          <ReorderIcon />
         </button>
       </div>
       <div className="links">
