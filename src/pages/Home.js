@@ -2,12 +2,13 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import "../styles/Home.css";
 
 function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h3>Hi, My name is Matthew</h3>
+        <h2>Hi, My name is Matthew</h2>
         <div className="prompt">
           <p>A software developer with a passion for learning and creating</p>
           <LinkedInIcon />
@@ -20,15 +21,21 @@ function Home() {
         <ol className="list">
           <li className="item">
             <h2>Front-End</h2>
-            <span></span>
+            <span>
+              React.js, JavaScript, Redux, Hooks, Context API, Jest, Cypress,
+              Yup, Axios, HTML, CSS
+            </span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
-            <span></span>
+            <span>Auth0, Postman, Heroku, Netlify, Vercel</span>
           </li>
           <li className="item">
-            <h2>Languages</h2>
-            <span></span>
+            <h2>Additional</h2>
+            <span>
+              SQLite, GitHub, Visual Studio Code, Architecture, Testing,
+              Debugging, Deployment
+            </span>
           </li>
         </ol>
       </div>
