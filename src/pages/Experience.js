@@ -44,7 +44,7 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2015 - 2016"
+          date="2016 - 2017"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -74,8 +74,22 @@ function Experience() {
           <p>
             Orchestrated strategic planning for Yale New Haven Hospital and Yale
             University Medical School, managing Onsite Corporate Wellness for
-            over 1000 members
+            over 1000 members.
           </p>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+
+      <VerticalTimeline lineColor="#3e497a">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2023 - 2024"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Bloomtech Institute of Technology
+          </h3>
+          <p>Full Stack Web Development Program Graduate</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
