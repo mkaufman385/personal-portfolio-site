@@ -18,10 +18,49 @@
 }
 
 .about h2 {
+  margin-top: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
   color: #e9d35b;
   height: 50px;
+}
+
+.profile-container {
+  position: relative; /* Allows positioning of the tooltip relative to this container */
+  display: inline-block; /* Ensures the tooltip is positioned relative to the image */
+}
+
+.profile-image {
+  display: flex; /* Centers the image in its container if needed */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  margin-bottom: 5px; /* Spacing around the image */
+}
+
+.profile-image img {
+  width: 225px; /* Width of the image */
+  height: 225px; /* Height of the image (same as width to make it a circle) */
+  border-radius: 50%; /* Makes the image a circle */
+  object-fit: cover; /* Ensures the image covers the circle without distortion */
+  border: 2px solid #3e497a; /* Optional: add a border */
+}
+
+.tooltip {
+  display: none; /* Hide the tooltip by default */
+  position: absolute; /* Position relative to the container */
+  bottom: 125%; /* Position above the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  background-color: #21325e; /* Background color of the tooltip */
+  color: #fff; /* Text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  white-space: nowrap; /* Prevents text wrapping */
+  z-index: 10; /* Ensures tooltip is above other content */
+}
+
+.profile-container:hover .tooltip {
+  display: block; /* Show the tooltip on hover */
 }
 
 .about .prompt {

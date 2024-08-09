@@ -15,7 +15,8 @@ function Footer() {
           <LinkedInIcon />
         </a>
       </div>
-      <p>&copy; 2024 Matthew Kaufman</p>
+      <p>Created by Matthew Kaufman</p>
+      <p>&copy; 2024 All Rights Reserved</p>
     </div>
   );
 }

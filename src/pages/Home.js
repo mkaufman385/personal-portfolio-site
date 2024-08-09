@@ -2,13 +2,26 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import profileImage from "../assets (images)/Updated-LinkedIn_Photo-white-background.png";
+
 import "../styles/Home.css";
 
 function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2>Hi, My name is Matthew</h2>
+        <div className="profile-container">
+          <div className="profile-image">
+            <img src={profileImage} alt="Profile of Matthew" />
+            <div className="tooltip">
+              <b>
+                Welcome to my Software Development Portfolio website! Please
+                explore my projects, skills, and experience.
+              </b>
+            </div>
+          </div>
+        </div>
+        <h2>Hi, My name is Matthew Kaufman</h2>
         <div className="prompt">
           <p>A software developer with a passion for learning and creating</p>
           <a
