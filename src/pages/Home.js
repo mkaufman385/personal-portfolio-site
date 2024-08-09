@@ -18,7 +18,11 @@ function Home() {
           >
             <LinkedInIcon />
           </a>
-          <a href="mailto:your-email@example.com">
+          <a
+            href="mailto:your-email@example.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <EmailIcon />
           </a>
           <a

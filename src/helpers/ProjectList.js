@@ -7,17 +7,22 @@ export const projectList = [
   {
     name: "Personal Portfolio Website",
     image: Proj1,
-    skills: "INSERT SKILLS HERE",
+    skills: "React.js, JavaScript, Hooks, React Router, HTML, CSS",
+    githubLink: "https://github.com/mkaufman385/personal-portfolio-site",
   },
   {
     name: "Asylum Office Grant Rate Tracker",
     image: Proj2,
-    skills: "INSERT SKILLS HERE",
+    skills: "React.js, Node.js, Javascript, Auth0, HTML, CSS ",
+    githubLink:
+      "https://github.com/mkaufman385/mkaufman385-asylum-rg-fe-starter",
   },
 
   {
     name: "Wheel, Quiz, Form",
     image: Proj3,
-    skills: "INSERT SKILLS HERE",
+    skills: "React.js, React Redux, Context API, Thunk, HTML, CSS",
+    githubLink:
+      "https://github.com/mkaufman385/mkaufman385-web-sprint-challenge-advanced-state",
   },
 ];
