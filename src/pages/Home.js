@@ -23,7 +23,9 @@ function Home() {
         </div>
         <h2>Hi, My name is Matthew Kaufman</h2>
         <div className="prompt">
-          <p>A software developer with a passion for learning and creating</p>
+          <p>
+            A Full Stack Web Developer with a passion for learning and creating
+          </p>
           <a
             href="https://www.linkedin.com/in/mkaufman385webdev"
             target="_blank"
@@ -32,7 +34,7 @@ function Home() {
             <LinkedInIcon />
           </a>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:mkaufman385@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

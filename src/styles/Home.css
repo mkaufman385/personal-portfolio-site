@@ -38,8 +38,8 @@
 }
 
 .profile-image img {
-  width: 225px; /* Width of the image */
-  height: 225px; /* Height of the image (same as width to make it a circle) */
+  width: 172px; /* Width of the image */
+  height: 172px; /* Height of the image (same as width to make it a circle) */
   border-radius: 50%; /* Makes the image a circle */
   object-fit: cover; /* Ensures the image covers the circle without distortion */
   border: 2px solid #3e497a; /* Optional: add a border */
