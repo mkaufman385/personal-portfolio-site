@@ -15,13 +15,13 @@ function Home() {
             <img src={profileImage} alt="Profile of Matthew" />
             <div className="tooltip">
               <b>
-                Welcome to my Software Development Portfolio website! Please
-                explore my projects, skills, and experience.
+                Welcome to my Web Development Portfolio website! Please explore
+                my projects, skills, and experience.
               </b>
             </div>
           </div>
         </div>
-        <h2>Hi, My name is Matthew Kaufman</h2>
+        <h2 className="name">Hi, My name is Matthew Kaufman</h2>
         <div className="prompt">
           <p>
             A Full Stack Web Developer with a passion for learning and creating

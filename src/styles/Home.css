@@ -63,6 +63,24 @@
   display: block; /* Show the tooltip on hover */
 }
 
+.name {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  color: #333;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff7e5f;
+  }
+  50% {
+    color: #feb47b;
+  }
+  100% {
+    color: #ff7e5f;
+  }
+}
+
 .about .prompt {
   width: 40%;
   font-size: 30px;
