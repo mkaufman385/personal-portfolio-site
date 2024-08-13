@@ -192,3 +192,28 @@
     display: none !important;
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .about h2 {
+    font-size: 60px; /* Adjust as needed */
+  }
+
+  .about .prompt {
+    font-size: 24px; /* Adjust as needed */
+    width: 80%; /* Adjust width for better fit */
+    margin-top: 20px; /* Ensure space above */
+  }
+
+  .about {
+    padding: 20px; /* Add padding if needed */
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .profile-container,
+  .name,
+  .prompt {
+    margin-bottom: 20px; /* Adjust spacing between elements */
+    width: 100%; /* Ensure full-width usage */
+    box-sizing: border-box; /* Include padding and border in width and height */
+  }
+}
