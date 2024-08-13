@@ -48,7 +48,7 @@
 .tooltip {
   display: none; /* Hide the tooltip by default */
   position: absolute; /* Position relative to the container */
-  bottom: 125%; /* Position above the image */
+  bottom: -30px; /* Position above the image */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust horizontal centering */
   background-color: #21325e; /* Background color of the tooltip */
@@ -57,6 +57,8 @@
   border-radius: 5px; /* Rounded corners */
   white-space: nowrap; /* Prevents text wrapping */
   z-index: 10; /* Ensures tooltip is above other content */
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
 }
 
 .profile-container:hover .tooltip {
@@ -82,13 +84,31 @@
 }
 
 .about .prompt {
-  width: 40%;
+  width: 70%;
   font-size: 30px;
+  margin-top: 10px; /* Adjust this value to reduce space above the container */
 }
+
+.prompt p {
+  margin-top: 0; /* Minimize space above the paragraph */
+}
+
 .prompt svg {
   font-size: 60px;
   margin: 5px;
   color: white;
+}
+
+.skills-down-arrow {
+  font-size: 90px;
+  color: white; /* Adjust the color as needed */
+  cursor: pointer;
+  margin-top: 20px; /* Adjust the spacing as needed */
+  transition: transform 0.2s ease-in-out;
+}
+
+.skills-down-arrow:hover {
+  transform: scale(1.2);
 }
 
 .skills {
@@ -102,6 +122,7 @@
 
 .skills h1 {
   color: #3e497a;
+  margin-bottom: 10px;
 }
 
 .skills .list {
@@ -109,8 +130,38 @@
   width: 60%;
 }
 
+.skills .list li {
+  margin-top: 5px;
+}
+
+.skills .list h2 {
+  margin-top: 0; /* Remove margin above <h2> to reduce space between it and the "Skills" heading */
+  margin-bottom: 20px;
+}
+
 .list span {
   font-size: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.footer-down-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: to center vertically if needed */
+  width: 100%; /* Ensure the container takes up the full width */
+  margin-top: 20px; /* Adjust the spacing as needed */
+}
+
+.footer-down-arrow {
+  font-size: 90px;
+  color: black; /* Adjust the color as needed */
+  cursor: pointer;
+  margin-top: 20px; /* Adjust the spacing as needed */
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-down-arrow:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 600px) {
@@ -133,5 +184,11 @@
 
   .skills h2 {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .tooltip {
+    display: none !important;
   }
 }

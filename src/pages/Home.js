@@ -1,8 +1,10 @@
 import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
+// import EmailIcon from "@material-ui/icons/Email";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import profileImage from "../assets (images)/Updated-LinkedIn_Photo-white-background.png";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link as ScrollLink } from "react-scroll";
 
 import "../styles/Home.css";
 
@@ -24,7 +26,10 @@ function Home() {
         <h2 className="name">Hi, My name is Matthew Kaufman</h2>
         <div className="prompt">
           <p>
-            A Full Stack Web Developer with a passion for learning and creating
+            Explore my portfolio to see how my Full Stack Web Development skills
+            can drive your projects forward. I’m ready to bring my expertise and
+            passion to your team as a software engineer. Let’s create something
+            great together!
           </p>
           <a
             href="https://www.linkedin.com/in/mkaufman385webdev"
@@ -33,13 +38,7 @@ function Home() {
           >
             <LinkedInIcon />
           </a>
-          <a
-            href="mailto:mkaufman385@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <EmailIcon />
-          </a>
+
           <a
             href="https://github.com/mkaufman385"
             target="_blank"
@@ -48,8 +47,11 @@ function Home() {
             <GitHubIcon />
           </a>
         </div>
+        <ScrollLink to="skills" smooth={true} duration={500}>
+          <ExpandMoreIcon className="skills-down-arrow" />
+        </ScrollLink>
       </div>
-      <div className="skills">
+      <div className="skills" id="skills">
         <h1>Skills</h1>
         <ol className="list">
           <li className="item">
@@ -72,6 +74,11 @@ function Home() {
           </li>
         </ol>
       </div>
+      <ScrollLink to="footer" smooth={true} duration={500}>
+        <div className="footer-down-arrow-container">
+          <ExpandMoreIcon className="footer-down-arrow" id="footer-arrow" />
+        </div>
+      </ScrollLink>
     </div>
   );
 }
