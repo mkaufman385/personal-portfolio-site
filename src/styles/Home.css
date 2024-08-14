@@ -26,47 +26,47 @@
 }
 
 .profile-container {
-  position: relative; /* Allows positioning of the tooltip relative to this container */
-  display: inline-block; /* Ensures the tooltip is positioned relative to the image */
+  position: relative;
+  display: inline-block;
 }
 
 .profile-image {
-  display: flex; /* Centers the image in its container if needed */
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
-  margin-bottom: 5px; /* Spacing around the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .profile-image img {
-  width: 172px; /* Width of the image */
-  height: 172px; /* Height of the image (same as width to make it a circle) */
-  border-radius: 50%; /* Makes the image a circle */
-  object-fit: cover; /* Ensures the image covers the circle without distortion */
-  border: 2px solid #3e497a; /* Optional: add a border */
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3e497a;
 }
 
 .tooltip {
-  display: none; /* Hide the tooltip by default */
-  position: absolute; /* Position relative to the container */
-  bottom: -30px; /* Position above the image */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust horizontal centering */
-  background-color: #21325e; /* Background color of the tooltip */
-  color: #fff; /* Text color */
-  padding: 5px 10px; /* Padding around the text */
-  border-radius: 5px; /* Rounded corners */
-  white-space: nowrap; /* Prevents text wrapping */
-  z-index: 10; /* Ensures tooltip is above other content */
+  display: none;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #21325e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 10;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000;
 }
 
 .profile-container:hover .tooltip {
-  display: block; /* Show the tooltip on hover */
+  display: block;
 }
 
 .name {
-  font-size: 40px; /* Adjust the size as needed */
+  font-size: 40px;
   color: #333;
   animation: colorChange 3s infinite;
 }
@@ -86,11 +86,11 @@
 .about .prompt {
   width: 70%;
   font-size: 30px;
-  margin-top: 10px; /* Adjust this value to reduce space above the container */
+  margin-top: 10px;
 }
 
 .prompt p {
-  margin-top: 0; /* Minimize space above the paragraph */
+  margin-top: 0;
 }
 
 .prompt svg {
@@ -101,9 +101,9 @@
 
 .skills-down-arrow {
   font-size: 90px;
-  color: white; /* Adjust the color as needed */
+  color: white;
   cursor: pointer;
-  margin-top: 20px; /* Adjust the spacing as needed */
+  margin-top: 20px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -135,13 +135,12 @@
 }
 
 .skills .list h2 {
-  margin-top: 0; /* Remove margin above <h2> to reduce space between it and the "Skills" heading */
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
 .list span {
   font-size: 20px;
-  /* padding-bottom: 20px; */
 }
 
 .footer-down-arrow-container {
@@ -154,15 +153,17 @@
 
 .footer-down-arrow {
   font-size: 90px;
-  color: black; /* Adjust the color as needed */
+  color: black;
   cursor: pointer;
-  margin-top: 20px; /* Adjust the spacing as needed */
+  margin-top: 20px;
   transition: transform 0.2s ease-in-out;
 }
 
 .footer-down-arrow:hover {
   transform: scale(1.2);
 }
+
+/*---------------MEDIA QUERIES------------------------*/
 
 @media only screen and (max-width: 600px) {
   .about h2 {
@@ -187,41 +188,34 @@
   }
 }
 
+/*----------NAVBAR RESUME ISSUE-----------------*/
+
+/* @media only screen and (max-width: 905px) {
+  .navbar a {
+    font-size: 20px !important; 
+/* padding: 8px 15px; 
+/* }
+} */
+
 @media only screen and (max-width: 965px) {
   .name {
     font-size: 50px !important;
   }
 
   .profile-image img {
-    width: 120px !important; /* Adjust this value to make the image smaller */
-    height: 120px !important; /* Match the height with the width for a perfect circle */
-  }
-  /* .about h2 {
-    font-size: 40px;
+    width: 120px !important;
+    height: 120px !important;
   }
 
-  .about .prompt {
-    margin-top: 10px;
-    font-size: 20px;
-    width: 80%;
+  .prompt {
+    font-size: 20px !important;
   }
-
-  .skills {
-    text-align: center;
-  }
-  .list {
-    padding: 0;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-  } */
 }
 
 @media only screen and (max-width: 1120px) {
   .profile-image img {
-    width: 135px; /* Adjust this value to make the image smaller */
-    height: 135px; /* Match the height with the width for a perfect circle */
+    width: 135px;
+    height: 135px;
   }
 }
 
@@ -233,25 +227,25 @@
 
 @media only screen and (max-width: 1280px) {
   .about h2 {
-    font-size: 60px; /* Adjust as needed */
+    font-size: 60px;
   }
 
   .about .prompt {
-    font-size: 24px; /* Adjust as needed */
-    width: 80%; /* Adjust width for better fit */
-    margin-top: 20px; /* Ensure space above */
+    font-size: 24px;
+    width: 80%;
+    margin-top: 20px;
   }
 
   .about {
-    padding: 20px; /* Add padding if needed */
-    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+    flex-direction: column;
   }
 
   .profile-container,
   .name,
   .prompt {
-    margin-bottom: 20px; /* Adjust spacing between elements */
-    width: 100%; /* Ensure full-width usage */
-    box-sizing: border-box; /* Include padding and border in width and height */
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
