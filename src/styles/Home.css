@@ -146,9 +146,9 @@
 .footer-down-arrow-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Optional: to center vertically if needed */
-  width: 100%; /* Ensure the container takes up the full width */
-  margin-top: 20px; /* Adjust the spacing as needed */
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .footer-down-arrow {
@@ -165,67 +165,11 @@
 
 /*---------------MEDIA QUERIES------------------------*/
 
-@media only screen and (max-width: 600px) {
-  .about h2 {
-    font-size: 40px;
-  }
-
-  .about .prompt {
-    margin-top: 10px;
-    font-size: 20px;
-    width: 80%;
-  }
-
-  .skills {
-    text-align: center;
-  }
-  .list {
-    padding: 0;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-  }
-}
-
-/*----------NAVBAR RESUME ISSUE-----------------*/
-
-/* @media only screen and (max-width: 905px) {
-  .navbar a {
-    font-size: 20px !important; 
-/* padding: 8px 15px; 
-/* }
-} */
-
-@media only screen and (max-width: 965px) {
-  .name {
-    font-size: 50px !important;
-  }
-
-  .profile-image img {
-    width: 120px !important;
-    height: 120px !important;
-  }
-
-  .prompt {
-    font-size: 20px !important;
-  }
-}
-
-@media only screen and (max-width: 1120px) {
-  .profile-image img {
-    width: 135px;
-    height: 135px;
-  }
-}
-
 @media only screen and (max-width: 1280px) {
   .tooltip {
     display: none !important;
   }
-}
 
-@media only screen and (max-width: 1280px) {
   .about h2 {
     font-size: 60px;
   }
@@ -247,5 +191,71 @@
     margin-bottom: 20px;
     width: 100%;
     box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .profile-image img {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .name {
+    font-size: 50px;
+  }
+
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .prompt {
+    font-size: 20px;
+  }
+}
+
+/*----------NAVBAR RESUME ISSUE-----------------*/
+
+/* @media only screen and (max-width: 905px) {
+  .navbar a {
+    font-size: 20px !important; 
+/* padding: 8px 15px; 
+/* }
+} */
+
+@media only screen and (max-width: 805px) {
+  .name {
+    font-size: 30px;
+    color: red;
+  }
+
+  .prompt {
+    font-size: 10px;
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
   }
 }
