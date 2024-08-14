@@ -66,7 +66,7 @@
 }
 
 .name {
-  font-size: 2.5rem; /* Adjust the size as needed */
+  font-size: 40px; /* Adjust the size as needed */
   color: #333;
   animation: colorChange 3s infinite;
 }
@@ -184,6 +184,44 @@
 
   .skills h2 {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .name {
+    font-size: 50px !important;
+  }
+
+  .profile-image img {
+    width: 120px !important; /* Adjust this value to make the image smaller */
+    height: 120px !important; /* Match the height with the width for a perfect circle */
+  }
+  /* .about h2 {
+    font-size: 40px;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  } */
+}
+
+@media only screen and (max-width: 1120px) {
+  .profile-image img {
+    width: 135px; /* Adjust this value to make the image smaller */
+    height: 135px; /* Match the height with the width for a perfect circle */
   }
 }
 
