@@ -203,7 +203,7 @@
 
 @media only screen and (max-width: 965px) {
   .name {
-    font-size: 50px;
+    font-size: 50px !important;
   }
 
   .profile-image img {
@@ -212,7 +212,7 @@
   }
 
   .prompt {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
@@ -227,13 +227,23 @@
 
 @media only screen and (max-width: 805px) {
   .name {
-    font-size: 30px;
-    color: red;
+    font-size: 40px !important;
+    /* color: red; */
   }
 
   .prompt {
-    font-size: 10px;
-    color: red;
+    font-size: 18px !important;
+    /* color: red; */
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .name {
+    font-size: 35px !important;
+  }
+
+  .prompt {
+    font-size: 15px !important;
   }
 }
 
@@ -257,5 +267,15 @@
 
   .skills h2 {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .name {
+    font-size: 30px !important;
+  }
+
+  .prompt {
+    font-size: 15px !important;
   }
 }
