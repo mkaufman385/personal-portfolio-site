@@ -1,5 +1,6 @@
 import React from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 // import GithubIcon from "@material-ui/icons/GithubIcon";
 // import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 // import { Link as ScrollLink } from "react-scroll";

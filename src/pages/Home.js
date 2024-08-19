@@ -1,9 +1,10 @@
 import React from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-// import EmailIcon from "@material-ui/icons/Email";
-import GitHubIcon from "@material-ui/icons/GitHub";
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
 import profileImage from "../assets (images)/Updated-LinkedIn_Photo-white-background.png";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link as ScrollLink } from "react-scroll";
 
 import "../styles/Home.css";
