@@ -2,6 +2,8 @@
   width: 100%;
   height: 100px;
   background: #21325e;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .links {
@@ -11,21 +13,22 @@
   align-items: center;
   justify-content: center;
   color: white;
+  box-sizing: border-box;
 }
 
 .navbar a {
-  color: white; /* Default text color */
+  color: white;
   font-size: 25px;
-  text-decoration: none; /* Remove underline */
-  padding: 10px 20px; /* Add some padding */
-  transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
 }
 
-/* Highlight on hover */
 .navbar a:hover {
-  color: #fff; /* Change text color on hover */
-  background-color: #3e497a; /* Change background color on hover */
-  border-radius: 5px; /* Optional: add rounded corners */
+  color: #fff;
+  background-color: #3e497a;
+  border-radius: 5px;
 }
 .toggleButton {
   width: 100%;

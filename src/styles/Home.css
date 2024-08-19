@@ -118,6 +118,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .skills h1 {
@@ -128,6 +129,7 @@
 .skills .list {
   list-style: none;
   width: 60%;
+  padding: 0;
 }
 
 .skills .list li {
@@ -262,7 +264,8 @@
     text-align: center;
   }
   .list {
-    padding: 0;
+    /* padding: 0; */
+    width: 100%;
   }
 
   .skills h2 {
