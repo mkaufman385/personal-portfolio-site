@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .home {
   width: 100%;
   align-items: center;
@@ -178,12 +181,13 @@
 
   .about .prompt {
     font-size: 24px;
-    width: 80%;
+    /* width: 80%; */
+    max-width: 100%;
     margin-top: 20px;
   }
 
   .about {
-    padding: 20px;
+    /* padding: 20px; */
     flex-direction: column;
   }
 
