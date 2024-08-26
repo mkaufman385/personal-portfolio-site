@@ -5,6 +5,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    historyApiFallback: true, // Enable fallback to index.html
+    historyApiFallback: true, // For client-side routing
   },
 });
