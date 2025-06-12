@@ -58,8 +58,8 @@ function Home() {
           <li className="item">
             <h2>Front-End</h2>
             <span>
-              React.js, JavaScript, Redux, Hooks, Context API, Jest, Cypress,
-              Yup, Axios, HTML, CSS
+              React.js, JavaScript, Redux, Vite, Tailwind CSS, Hooks, Context
+              API, Jest, Cypress, Yup, Axios, HTML, CSS
             </span>
           </li>
           <li className="item">

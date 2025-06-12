@@ -1,3 +1,5 @@
+import Proj1 from "../assets (images)/Daily-Health-Tracker-site-image.png";
+
 import Proj2 from "../assets (images)/Personal-portfolio-site-image.png";
 import Proj3 from "../assets (images)/Asylum-office-grant-rate-tracker-site-image.png";
 import Proj4 from "../assets (images)/advanced-state-wheel-quiz-form-site-image.png";
@@ -5,10 +7,11 @@ import Proj4 from "../assets (images)/advanced-state-wheel-quiz-form-site-image.
 
 export const projectList = [
   {
-    name: "Battle Bites - Currently in Progress",
-    // image: Proj1,
-    skills: "React.js, JavaScript, Hooks, React Router, HTML, CSS",
-    githubLink: "https://github.com/mkaufman385/battle-bites",
+    name: "Daily Health Tracker",
+    image: Proj1,
+    skills:
+      "React.js, JavaScript, Hooks, Vite, Auth0, Tailwind CSS, Styled Components, HTML, CSS, Responsive Design",
+    githubLink: "https://github.com/mkaufman385/daily-health-tracker",
   },
   {
     name: "Personal Portfolio Website",

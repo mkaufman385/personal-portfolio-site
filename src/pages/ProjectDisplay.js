@@ -11,7 +11,7 @@ function ProjectDisplay() {
     <div className="project">
       <h1>{project.name}</h1>
       <img src={project.image} alt="Project screenshot displayed" />
-      <p>
+      <p className="skills-div">
         <b>Skills:</b> {project.skills}
       </p>
       <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
